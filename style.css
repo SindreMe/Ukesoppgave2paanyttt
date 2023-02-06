@@ -1,0 +1,12 @@
+.bilde{
+    height: 250px;
+    width: 360px;
+    margin-left: 130px;
+    cursor: pointer;
+}
+
+#cargrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 300px;
+}

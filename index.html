@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random images</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color:grey;">
+    
+    <div id="cargrid">
+        <img onclick="randomImage(this)"class="bilde"></img>
+        <img onclick="randomImage(this)"class="bilde"></img>
+        <img onclick="randomImage(this)"class="bilde"></img>
+    </div>
+
+
+    <script>
+
+        //Lag en funksjon som setter kilden til det bildet du trykker på,
+        //og en funksjon som returnerer navnet på et av de 3 bildene.
+        function randomImage(element) {
+
+        let x = Math.floor(Math.random() *3) +1;
+            if(x == 1){
+                element.src="img/bilde1.jpg";
+                }
+            else if(x == 2){
+                element.src="img/bilde3.jpg";
+            }
+            else {
+                element.src="img/bilde2.jpg";
+            }
+            
+       
+    }
+
+    </script>
+
+</body>
+</html>
